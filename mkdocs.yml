@@ -1,0 +1,27 @@
+site_name: 5GCloudWorks
+#site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+  logo: logo.png
+
+nav:
+  - LAB_1 Codes: index.md
+  - About: about.md
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - glightbox
