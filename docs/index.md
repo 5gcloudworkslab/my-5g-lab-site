@@ -14,6 +14,11 @@ This section documents the complete workflow, scripts, commands, fixes, and trou
   <figcaption>AWS Application Structure</figcaption>
 </figure>
 
+<figure markdown="span">
+  ![Image title](images/Ip design5.png){ width="600" }
+  <figcaption>5G Architecture</figcaption>
+</figure>
+
 ---
 
 ## 0. Handy scripts

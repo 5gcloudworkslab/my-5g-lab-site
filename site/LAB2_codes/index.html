@@ -3,15 +3,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Background and engineering experience of Amirhossein, focusing on 5G Core networks, Open5GS, UERANSIM, AWS labs, and reproducible telecom workflows.">
+      
+      
+        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB2_codes/">
       
       
       
-        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/about/">
-      
-      
-        <link rel="prev" href="..">
-      
+        <link rel="next" href="..">
       
       
         
@@ -22,7 +20,7 @@
     
     
       
-        <title>About Me - 5GCloudWorks</title>
+        <title>LAB_2 Codes - 5GCloudWorks</title>
       
     
     
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-me" class="md-skip">
+        <a href="#lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About Me
+              LAB_2 Codes
             
           </span>
         </div>
@@ -175,9 +173,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../LAB2_codes/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -213,11 +213,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
         
   
   
@@ -272,10 +270,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../LAB2_codes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAB_2 Codes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -291,6 +316,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ec2-1-ueransim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EC2 #1 – UERANSIM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ec2-2-open5gs-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EC2 #2 – Open5GS Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Key Differences from Lab 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (A) Distributed N2 and N3 interfaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n2-ngap-over-sctp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N2 (NGAP over SCTP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -326,37 +455,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    About
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -372,92 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#products-available" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Products available
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-get-access-to-the-ami" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Get Access to the AMI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-contact-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Contact Me
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-complete-the-payment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Complete the Payment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-provide-your-aws-account-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Provide Your AWS Account ID
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-ami-access-will-be-granted" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. AMI Access Will Be Granted
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -489,68 +505,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#products-available" class="md-nav__link">
+  <a href="#1-architecture-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Products available
+        1. Architecture Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ec2-1-ueransim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EC2 #1 – UERANSIM
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-get-access-to-the-ami" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#ec2-2-open5gs-core" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to Get Access to the AMI
+        EC2 #2 – Open5GS Core
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#1-contact-me" class="md-nav__link">
+  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Contact Me
+        2. Key Differences from Lab 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (A) Distributed N2 and N3 interfaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n2-ngap-over-sctp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N2 (NGAP over SCTP)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-complete-the-payment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Complete the Payment
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-provide-your-aws-account-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Provide Your AWS Account ID
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-ami-access-will-be-granted" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. AMI Access Will Be Granted
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -571,41 +605,62 @@
 
 
 
-<h1 id="about-me">About Me</h1>
-<p>I am a core network engineer with extensive hands‑on experience across EPC, 5GC, and IMS domains. My work focuses on performance optimisation, troubleshooting, and ensuring end‑to‑end service reliability across large‑scale mobile‑core environments.</p>
-<p>Over more than a decade in mobile‑core engineering, I’ve supported major 4G/5G deployments, cloud‑native transformations, and multi‑vendor ecosystems spanning virtualised, bare‑metal, and Kubernetes‑based infrastructures.</p>
-<p>My technical background includes packet‑core integration, KPI‑driven optimisation, incident resolution, and deep‑dive analysis of signalling protocols such as SIP, Diameter, GTP‑C/U, and 5G SBA interfaces. I have strong experience with VNF/CNF lifecycle management, containerised 5G core components, and cloud platforms including OpenStack, VMware, and Kubernetes. I’ve contributed to acceptance testing, service onboarding, network tuning, and cross‑domain investigations across EPC, IMS, VoWiFi, IoT, and CUPS‑based architectures.</p>
-<p>Earlier in my career, I worked extensively on planning, optimisation, and maintenance of packet‑core and IMS platforms. This included supporting enterprise APN services, roaming, VoIP/VoLTE/VoWiFi enablement, and developing KPI dashboards for operational and planning teams. My experience spans the full lifecycle of mobile‑core operations — from NOC monitoring and FO support to back‑office engineering, optimisation, and cloud‑native 5G integration.</p>
-<p>Alongside my telecom background, I build cloud‑based lab environments and reproducible 5G testbeds. I maintain a fully configured AWS AMI that includes a ready‑to‑use Open5GS + UERANSIM lab environment. Engineers, students, or researchers who want access to this AMI can contact me at fivegcloudworks@gmail.com. The AMI is available for a small fee (AUD $10) to support ongoing maintenance and updates.</p>
-<p>As an independent researcher, I am also open to collaborating with academic or industry teams working on 5G Core, cloud‑native telecom architectures, and next‑generation mobile‑network implementations.</p>
-<p>I hold a Master’s degree in Electrical &amp; Electronics Engineering, multiple industry certifications across 5G, cloud, and networking, and I am a certified Telecommunications Professional Engineer. I am currently based in Sydney, fully eligible to work in Australia, and committed to contributing to modern, cloud‑driven telecom environments.</p>
-<p><span style="font-size: 22px;">Contact me at fivegcloudworks@gmail.com</span></p>
-<h2 id="products-available">Products available</h2>
-<p>AUD $10 → basic AMI</p>
-<p>AUD $25 → AMI + documentation</p>
-<p>AUD $50 → AMI + documentation + 30‑minute support</p>
-<p>This AMI includes open‑source components such as Linux and Open5GS.
-All open‑source software remains under its original license.
-The fee covers my configuration work, integration, and maintenance.</p>
-<h2 id="how-to-get-access-to-the-ami">How to Get Access to the AMI</h2>
-<p>To access the pre‑configured Open5GS + UERANSIM AWS AMI, please follow the steps below.</p>
-<h2 id="1-contact-me">1. Contact Me</h2>
-<p>Send an email to <strong>fivegcloudworks@gmail.com</strong>. I will reply with the payment instructions and the required details.</p>
-<h2 id="2-complete-the-payment">2. Complete the Payment</h2>
-<p>Once you receive the payment instructions, complete the payment to proceed.</p>
-<h2 id="3-provide-your-aws-account-id">3. Provide Your AWS Account ID</h2>
-<p>After payment, send me your AWS Account ID (a 12‑digit number). You must have an active AWS account to use the AMI.</p>
-<h2 id="4-ami-access-will-be-granted">4. AMI Access Will Be Granted</h2>
-<p>After receiving your AWS Account ID, I will add it to the AMI permissions. You will then be able to launch the AMI directly from your AWS console.</p>
+<h1 id="lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture"><strong>Lab 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)</strong></h1>
+<p>~The pre‑configured AWS AMI for this lab is available for purchase. For details, see the About page.~</p>
+<p>This lab extends the work from Lab 1, but introduces a major architectural change:<br>
+instead of running both Open5GS and UERANSIM on a single EC2 instance, the system is now distributed across two EC2 instances, each in a separate Availability Zone.</p>
+<p>The goal of Lab 2 was to validate that Open5GS and UERANSIM can operate across AWS infrastructure boundaries, with correct routing, SCTP/GTP‑U reachability, and proper N2/N3 interface binding.</p>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20structure.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20structure.png" width="600"></a>
+<br>
+<figcaption>Lab 2 – Distributed AWS Architecture</figcaption>
+</figure>
+<hr>
+<h2 id="1-architecture-overview"><strong>1. Architecture Overview</strong></h2>
+<p>Lab 2 uses two EC2 instances inside the same VPC:</p>
+<h3 id="ec2-1-ueransim"><strong>EC2 #1 – UERANSIM</strong></h3>
+<ul>
+<li>Runs gNodeB</li>
+<li>Runs UE</li>
+<li>Handles RRC, NGAP, and GTP‑U uplink/downlink</li>
+<li>Must reach AMF (N2) and UPF (N3) over private IPs</li>
+</ul>
+<h3 id="ec2-2-open5gs-core"><strong>EC2 #2 – Open5GS Core</strong></h3>
+<ul>
+<li>Runs AMF, SMF, UPF, NRF, SCP, UDM, UDR, AUSF</li>
+<li>UPF exposes GTP‑U (UDP/2152)</li>
+<li>AMF exposes NGAP (SCTP/38412)</li>
+</ul>
+<p>Both instances remain inside the same VPC, so routing is automatic.<br>
+However, AWS does not allow SCTP or GTP‑U by default, so Security Groups must be configured manually.</p>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20SG%20for%202%20EC2.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20SG%20for%202%20EC2.png" width="600"></a>
+<br>
+<figcaption>Lab 2 – SG configuration</figcaption>
+</figure>
+<hr>
+<h2 id="2-key-differences-from-lab-1"><strong>2. Key Differences from Lab 1</strong></h2>
+<p>Lab 1 used a single EC2 instance, so all interfaces were loopback‑local or internal to the same machine.</p>
+<p>Lab 2 introduces the following changes.</p>
+<h3 id="a-distributed-n2-and-n3-interfaces"><strong>(A) Distributed N2 and N3 interfaces</strong></h3>
+<p>You must update the following in UERANSIM configs to use EC2 private IPs.</p>
+<h4 id="n2-ngap-over-sctp"><strong>N2 (NGAP over SCTP)</strong></h4>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/open5gs%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/open5gs%20private%20IP.png" width="600"></a>
+<br>
+<figcaption>Lab 2 – Private IP address of AZ for Open5GS</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/UERANSIM%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/UERANSIM%20private%20IP.png" width="600"></a>
+<br>
+<figcaption>Lab 2 – Private IP address of AZ for UERANSIM</figcaption>
+</figure>
 
 
 
 
 
 
-
-  
-  
 
 
 
