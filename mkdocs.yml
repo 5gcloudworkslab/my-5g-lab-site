@@ -1,5 +1,6 @@
 site_name: 5GCloudWorks
-#site_url: https://mydomain.org/mysite
+docs_dir: docs
+site_url: https://5gcloudworkslab.github.io/my-5g-lab-site/
 theme:
   name: material
   features:
@@ -12,6 +13,7 @@ theme:
   logo: logo.png
 
 nav:
+  - LAB_2 Codes: LAB2_codes.md
   - LAB_1 Codes: index.md
   - About: about.md
 
@@ -25,3 +27,4 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - search

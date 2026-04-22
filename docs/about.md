@@ -1,3 +1,16 @@
+---
+title: About Me
+description: Background and engineering experience of Amirhossein, focusing on 5G Core networks, Open5GS, UERANSIM, AWS labs, and reproducible telecom workflows.
+keywords:
+  - 5G Core
+  - Open5GS
+  - UERANSIM
+  - AWS AMI
+  - 5G Lab
+  - Telecom Engineering
+  - Cloud Infrastructure
+---
+
 # About Me
 
 I am a core network engineer with extensive hands‑on experience across EPC, 5GC, and IMS domains. My work focuses on performance optimisation, troubleshooting, and ensuring end‑to‑end service reliability across large‑scale mobile‑core environments.
@@ -12,7 +25,7 @@ Alongside my telecom background, I build cloud‑based lab environments and repr
 
 As an independent researcher, I am also open to collaborating with academic or industry teams working on 5G Core, cloud‑native telecom architectures, and next‑generation mobile‑network implementations.
 
-I hold a Master’s degree in Electrical & Electronics Engineering, multiple industry certifications across 5G, cloud, and networking, and I am a certified Telecommunications Professional Engineer. As an Australian Permanent Resident, I am fully eligible to work in Australia and committed to contributing to modern, cloud‑driven telecom environments.
+I hold a Master’s degree in Electrical & Electronics Engineering, multiple industry certifications across 5G, cloud, and networking, and I am a certified Telecommunications Professional Engineer. I am currently based in Sydney, fully eligible to work in Australia, and committed to contributing to modern, cloud‑driven telecom environments.
 
 <span style="font-size: 22px;">Contact me at fivegcloudworks@gmail.com</span>
 
@@ -30,14 +43,20 @@ The fee covers my configuration work, integration, and maintenance.
 
 ## How to Get Access to the AMI
 
-To access the pre‑configured Open5GS + UERANSIM AWS AMI, you will need:
+To access the pre‑configured Open5GS + UERANSIM AWS AMI, please follow the steps below.
 
-an active AWS account, and
+## 1. Contact Me
 
-your AWS Account ID (a 12‑digit number)
+Send an email to **fivegcloudworks@gmail.com**. I will reply with the payment instructions and the required details.
 
-Once you complete the payment, simply send your AWS Account ID to:
+## 2. Complete the Payment
 
-fivegcloudworks@gmail.com
+Once you receive the payment instructions, complete the payment to proceed.
 
-After receiving your ID, I will grant access to the AMI so you can launch it directly from your AWS console.
+## 3. Provide Your AWS Account ID
+
+After payment, send me your AWS Account ID (a 12‑digit number). You must have an active AWS account to use the AMI.
+
+## 4. AMI Access Will Be Granted
+
+After receiving your AWS Account ID, I will add it to the AMI permissions. You will then be able to launch the AMI directly from your AWS console.
