@@ -1,62 +1,35 @@
+<!-- ========================= -->
+<!-- Short Professional Intro  -->
+<!-- ========================= -->
+
+<p>
+I am a core network engineer specialising in EPC, 5GC, and IMS, with strong hands‑on experience in troubleshooting, optimisation, and cloud‑native mobile‑core deployments. My work spans multi‑vendor packet‑core environments, signalling analysis, and building reproducible 5G lab infrastructures for research and engineering teams.
+</p>
+
+<p>
+I also maintain cloud‑based 5G testbeds and support engineers, students, and researchers working with Open5GS and UERANSIM.
+</p>
+
 ---
-title: About Me
-description: Background and engineering experience of Amirhossein, focusing on 5G Core networks, Open5GS, UERANSIM, AWS labs, and reproducible telecom workflows.
-keywords:
-  - 5G Core
-  - Open5GS
-  - UERANSIM
-  - AWS AMI
-  - 5G Lab
-  - Telecom Engineering
-  - Cloud Infrastructure
----
 
-# About Me
+<!-- ========================= -->
+<!-- AMI Access Section        -->
+<!-- ========================= -->
 
-I am a core network engineer with extensive hands‑on experience across EPC, 5GC, and IMS domains. My work focuses on performance optimisation, troubleshooting, and ensuring end‑to‑end service reliability across large‑scale mobile‑core environments.
+## Access the Open5GS + UERANSIM AWS AMI
 
-Over more than a decade in mobile‑core engineering, I’ve supported major 4G/5G deployments, cloud‑native transformations, and multi‑vendor ecosystems spanning virtualised, bare‑metal, and Kubernetes‑based infrastructures.
+<p>
+I maintain a fully configured AWS AMI that includes a ready‑to‑use Open5GS + UERANSIM lab environment. If you would like access to this AMI, please send an email to:
+</p>
 
-My technical background includes packet‑core integration, KPI‑driven optimisation, incident resolution, and deep‑dive analysis of signalling protocols such as SIP, Diameter, GTP‑C/U, and 5G SBA interfaces. I have strong experience with VNF/CNF lifecycle management, containerised 5G core components, and cloud platforms including OpenStack, VMware, and Kubernetes. I’ve contributed to acceptance testing, service onboarding, network tuning, and cross‑domain investigations across EPC, IMS, VoWiFi, IoT, and CUPS‑based architectures.
+<p style="font-size: 1.1rem; font-weight: bold;">
+📧 fivegcloudworks@gmail.com
+</p>
 
-Earlier in my career, I worked extensively on planning, optimisation, and maintenance of packet‑core and IMS platforms. This included supporting enterprise APN services, roaming, VoIP/VoLTE/VoWiFi enablement, and developing KPI dashboards for operational and planning teams. My experience spans the full lifecycle of mobile‑core operations — from NOC monitoring and FO support to back‑office engineering, optimisation, and cloud‑native 5G integration.
+<p>
+Once I receive your message, I will provide the details and request your AWS Account ID (12‑digit number). After that, I will grant access to the AMI so you can launch it directly from your AWS console.
+</p>
 
-Alongside my telecom background, I build cloud‑based lab environments and reproducible 5G testbeds. I maintain a fully configured AWS AMI that includes a ready‑to‑use Open5GS + UERANSIM lab environment. Engineers, students, or researchers who want access to this AMI can contact me at fivegcloudworks@gmail.com. The AMI is available for a small fee (AUD $10) to support ongoing maintenance and updates.
-
-As an independent researcher, I am also open to collaborating with academic or industry teams working on 5G Core, cloud‑native telecom architectures, and next‑generation mobile‑network implementations.
-
-I hold a Master’s degree in Electrical & Electronics Engineering, multiple industry certifications across 5G, cloud, and networking, and I am a certified Telecommunications Professional Engineer. I am currently based in Sydney, fully eligible to work in Australia, and committed to contributing to modern, cloud‑driven telecom environments.
-
-<span style="font-size: 22px;">Contact me at fivegcloudworks@gmail.com</span>
-
-## Products available
-
-AUD $10 → basic AMI
-
-AUD $25 → AMI + documentation
-
-AUD $50 → AMI + documentation + 30‑minute support
-
-This AMI includes open‑source components such as Linux and Open5GS.
-All open‑source software remains under its original license.
-The fee covers my configuration work, integration, and maintenance.
-
-## How to Get Access to the AMI
-
-To access the pre‑configured Open5GS + UERANSIM AWS AMI, please follow the steps below.
-
-## 1. Contact Me
-
-Send an email to **fivegcloudworks@gmail.com**. I will reply with the payment instructions and the required details.
-
-## 2. Complete the Payment
-
-Once you receive the payment instructions, complete the payment to proceed.
-
-## 3. Provide Your AWS Account ID
-
-After payment, send me your AWS Account ID (a 12‑digit number). You must have an active AWS account to use the AMI.
-
-## 4. AMI Access Will Be Granted
-
-After receiving your AWS Account ID, I will add it to the AMI permissions. You will then be able to launch the AMI directly from your AWS console.
+<p>
+This AMI uses open‑source components such as Linux and Open5GS, which remain under their original licenses. My configuration work is shared to support engineers, students, and researchers working on 5G Core and cloud‑native telecom environments.
+</p>
