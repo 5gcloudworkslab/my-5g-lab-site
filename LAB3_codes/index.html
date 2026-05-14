@@ -5,13 +5,11 @@
       
       
       
-        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB2_codes/">
+        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB3_codes/">
       
       
-        <link rel="prev" href="../LAB3_codes/">
       
-      
-        <link rel="next" href="..">
+        <link rel="next" href="../LAB2_codes/">
       
       
         
@@ -22,7 +20,7 @@
     
     
       
-        <title>LAB_2 Codes - 5GCloudWorks</title>
+        <title>LAB_3 Codes - 5GCloudWorks</title>
       
     
     
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture" class="md-skip">
+        <a href="#lab-3-open5gs-ueransim-splunk-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LAB_2 Codes
+              LAB_3 Codes
             
           </span>
         </div>
@@ -175,9 +173,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../LAB3_codes/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -194,11 +194,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../LAB2_codes/" class="md-tabs__link">
         
   
   
@@ -291,33 +289,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../LAB3_codes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LAB_3 Codes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -337,7 +308,7 @@
   <span class="md-ellipsis">
     
   
-    LAB_2 Codes
+    LAB_3 Codes
   
 
     
@@ -355,7 +326,7 @@
   <span class="md-ellipsis">
     
   
-    LAB_2 Codes
+    LAB_3 Codes
   
 
     
@@ -381,86 +352,167 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
+  <a href="#1-booting-the-server-ami-v04" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture Overview
+        1. Booting the Server (AMI V04)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #2 – Open5GS Core
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+  <a href="#2-initial-health-checks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Key Differences from Lab 1
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
+        2. Initial Health Checks
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#3-preparing-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Preparing Log Files
+      
+    </span>
+  </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#4-bringing-up-the-first-8-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Bringing Up the First 8 Nodes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-bringing-up-the-remaining-3-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Bringing Up the Remaining 3 Nodes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-starting-ueransim-ue-gnodeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Starting UERANSIM (UE + gNodeB)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-modifying-amf-configuration-restarting-amf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Modifying AMF Configuration &amp; Restarting AMF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-modifying-gnodeb-configuration-restarting-gnodeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Modifying gNodeB Configuration &amp; Restarting gNodeB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-modifying-ue-configuration-restarting-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Modifying UE Configuration &amp; Restarting UE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-switching-off-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Switching Off UE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-automated-attachdetach-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Automated Attach/Detach Cycling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-useful-monitoring-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Useful Monitoring Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-installing-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Installing Splunk Enterprise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-adding-open5gs-logs-to-splunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Adding Open5GS Logs to Splunk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-splunk-input-successfully-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Splunk Input Successfully Created
+      
+    </span>
+  </a>
   
 </li>
       
@@ -468,6 +520,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB2_codes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAB_2 Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -553,86 +632,167 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
+  <a href="#1-booting-the-server-ami-v04" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture Overview
+        1. Booting the Server (AMI V04)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #2 – Open5GS Core
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+  <a href="#2-initial-health-checks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Key Differences from Lab 1
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
+        2. Initial Health Checks
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#3-preparing-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Preparing Log Files
+      
+    </span>
+  </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#4-bringing-up-the-first-8-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Bringing Up the First 8 Nodes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-bringing-up-the-remaining-3-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Bringing Up the Remaining 3 Nodes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-starting-ueransim-ue-gnodeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Starting UERANSIM (UE + gNodeB)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-modifying-amf-configuration-restarting-amf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Modifying AMF Configuration &amp; Restarting AMF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-modifying-gnodeb-configuration-restarting-gnodeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Modifying gNodeB Configuration &amp; Restarting gNodeB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-modifying-ue-configuration-restarting-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Modifying UE Configuration &amp; Restarting UE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-switching-off-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Switching Off UE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-automated-attachdetach-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Automated Attach/Detach Cycling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-useful-monitoring-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Useful Monitoring Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-installing-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Installing Splunk Enterprise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-adding-open5gs-logs-to-splunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Adding Open5GS Logs to Splunk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-splunk-input-successfully-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Splunk Input Successfully Created
+      
+    </span>
+  </a>
   
 </li>
       
@@ -653,55 +813,153 @@
 
 
 
-<h1 id="lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture"><strong>Lab 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)</strong></h1>
-<p>~The pre‑configured AWS AMI for this lab is available for purchase. For details, see the About page.~</p>
-<p>This lab extends the work from Lab 1, but introduces a major architectural change:<br>
-instead of running both Open5GS and UERANSIM on a single EC2 instance, the system is now distributed across two EC2 instances, each in a separate Availability Zone.</p>
-<p>The goal of Lab 2 was to validate that Open5GS and UERANSIM can operate across AWS infrastructure boundaries, with correct routing, SCTP/GTP‑U reachability, and proper N2/N3 interface binding.</p>
-<figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20structure.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20structure.png" width="600"></a>
-<br>
-<figcaption>Lab 2 – Distributed AWS Architecture</figcaption>
-</figure>
-<hr>
-<h2 id="1-architecture-overview"><strong>1. Architecture Overview</strong></h2>
-<p>Lab 2 uses two EC2 instances inside the same VPC:</p>
-<h3 id="ec2-1-ueransim"><strong>EC2 #1 – UERANSIM</strong></h3>
+<h1 id="lab-3-open5gs-ueransim-splunk-integration">LAB 3 – Open5GS + UERANSIM + Splunk Integration</h1>
+<h2 id="1-booting-the-server-ami-v04">1. Booting the Server (AMI V04)</h2>
 <ul>
-<li>Runs gNodeB</li>
-<li>Runs UE</li>
-<li>Handles RRC, NGAP, and GTP‑U uplink/downlink</li>
-<li>Must reach AMF (N2) and UPF (N3) over private IPs</li>
+<li>Launch EC2 instance from <strong>Open5GS AMI V04</strong></li>
+<li>Set timezone:</li>
 </ul>
-<h3 id="ec2-2-open5gs-core"><strong>EC2 #2 – Open5GS Core</strong></h3>
+<pre><code class="language-bash">sudo timedatectl set-timezone Australia/Sydney
+timedatectl
+</code></pre>
+<h2 id="2-initial-health-checks">2. Initial Health Checks</h2>
 <ul>
-<li>Runs AMF, SMF, UPF, NRF, SCP, UDM, UDR, AUSF</li>
-<li>UPF exposes GTP‑U (UDP/2152)</li>
-<li>AMF exposes NGAP (SCTP/38412)</li>
+<li>Verify Open5GS <strong>MongoDB health</strong></li>
+<li>Verify <strong>WebUI availability</strong></li>
+<li>Log in to the Open5GS WebUI</li>
+<li>Open required EC2 ports:</li>
 </ul>
-<p>Both instances remain inside the same VPC, so routing is automatic.<br>
-However, AWS does not allow SCTP or GTP‑U by default, so Security Groups must be configured manually.</p>
+<table>
+<thead>
+<tr>
+<th>Port</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8000</td>
+<td>Open5GS WebUI</td>
+</tr>
+<tr>
+<td>9999</td>
+<td>UERANSIM gNodeB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-preparing-log-files">3. Preparing Log Files</h2>
+<p>Observed around <strong>3.65GB</strong> of accumulated logs.<br>
+Resetting all Open5GS logs for a clean session:</p>
+<pre><code class="language-bash">truncate -s 0 /var/local/log/open5gs/*.log
+</code></pre>
+<h2 id="4-bringing-up-the-first-8-nodes">4. Bringing Up the First 8 Nodes</h2>
+<pre><code class="language-bash">~/open5gs-lab.sh
+sudo setcap cap_net_admin=eip /usr/local/bin/open5gs-upfd
+bash ~/launch-upf.sh
+
+tmux set -g mouse off
+</code></pre>
+<h2 id="4-bringing-up-the-remaining-3-nodes">4. Bringing Up the Remaining 3 Nodes</h2>
+<pre><code>bash ~/launch-open5gs.sh
+</code></pre>
+<h2 id="5-starting-ueransim-ue-gnodeb">5. Starting UERANSIM (UE + gNodeB)</h2>
+<pre><code>bash ~/tmux-ueransim.sh
+</code></pre>
+<h2 id="6-modifying-amf-configuration-restarting-amf">6. Modifying AMF Configuration &amp; Restarting AMF</h2>
+<pre><code>sudo nano /etc/open5gs/amf.yaml
+/usr/local/bin/open5gs-amfd -c /etc/open5gs/amf.yaml | tee ~/open5gs-logs/AMF.log
+</code></pre>
+<h2 id="7-modifying-gnodeb-configuration-restarting-gnodeb">7. Modifying gNodeB Configuration &amp; Restarting gNodeB</h2>
+<pre><code>sudo nano ~/UERANSIM/config/open5gs-gnb.yaml
+~/UERANSIM/build/nr-gnb -c ~/UERANSIM/config/open5gs-gnb.yaml | tee ~/ueransim-logs/gNB.log
+</code></pre>
+<h2 id="8-modifying-ue-configuration-restarting-ue">8. Modifying UE Configuration &amp; Restarting UE</h2>
+<pre><code>sudo nano ~/UERANSIM/config/open5gs-ue.yaml
+sudo ~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/open5gs-ue.yaml | tee ~/ueransim-logs/UE.log
+</code></pre>
+<h2 id="9-switching-off-ue">9. Switching Off UE</h2>
+<pre><code>cd ~/UERANSIM/build
+./nr-cli imsi-999700000000001 -e "deregister switch-off"
+</code></pre>
+<h2 id="10-automated-attachdetach-cycling">10. Automated Attach/Detach Cycling</h2>
+<pre><code>/home/ubuntu/ue-cycle.sh
+</code></pre>
+<h2 id="11-useful-monitoring-commands">11. Useful Monitoring Commands</h2>
+<pre><code>./nr-cli UERANSIM-gnb-999-70-1 -e "ue-list"
+./nr-cli UERANSIM-gnb-999-70-1 -e "ue-count"
+./nr-cli UERANSIM-gnb-999-70-1 -e "status"
+./nr-cli UERANSIM-gnb-999-70-1 -e "info"
+./nr-cli UERANSIM-gnb-999-70-1 -e "amf-info"
+./nr-cli --dump
+</code></pre>
+<h2 id="12-installing-splunk-enterprise">12. Installing Splunk Enterprise</h2>
+<pre><code>sudo su
+cd /opt
+wget -O splunk-10.0.0.deb "https://download.splunk.com/products/splunk/releases/10.0.0/linux/splunk-10.0.0-e8eb0c4654f8-linux-amd64.deb"
+dpkg -i splunk-10.0.0.deb
+apt-get install -f
+/opt/splunk/bin/splunk start --accept-license
+/opt/splunk/bin/splunk enable boot-start
+</code></pre>
+<h2 id="13-adding-open5gs-logs-to-splunk">13. Adding Open5GS Logs to Splunk</h2>
+<p>AMF Log Input, File: /var/local/log/open5gs/amf.log, Monitor: Continuously, Source Type: generic_single_line, App Context: search, Host: EC2 hostname, Index: default</p>
+<h2 id="14-splunk-input-successfully-created">14. Splunk Input Successfully Created</h2>
+<p>Splunk is now indexing Open5GS + UERANSIM logs and ready for:</p>
+<p>Searching, Field extraction, Dashboard creation, KPI visualization</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20SG%20for%202%20EC2.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20SG%20for%202%20EC2.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%201.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%201.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – SG configuration</figcaption>
+<figcaption>Splunk configuration</figcaption>
 </figure>
-<hr>
-<h2 id="2-key-differences-from-lab-1"><strong>2. Key Differences from Lab 1</strong></h2>
-<p>Lab 1 used a single EC2 instance, so all interfaces were loopback‑local or internal to the same machine.</p>
-<p>Lab 2 introduces the following changes.</p>
-<h3 id="a-distributed-n2-and-n3-interfaces"><strong>(A) Distributed N2 and N3 interfaces</strong></h3>
-<p>You must update the following in UERANSIM configs to use EC2 private IPs.</p>
-<h4 id="n2-ngap-over-sctp"><strong>N2 (NGAP over SCTP)</strong></h4>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/open5gs%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/open5gs%20private%20IP.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%202.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%202.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Private IP address of AZ for Open5GS</figcaption>
+<figcaption>Splunk configuration</figcaption>
 </figure>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/UERANSIM%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/UERANSIM%20private%20IP.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%203.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%203.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Private IP address of AZ for UERANSIM</figcaption>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%204.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%204.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%205.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%205.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%206.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%206.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%207.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%207.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%208.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%208.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%209.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%209.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%2010.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%2010.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Splunk%2011.png" data-desc-position="bottom"><img alt="Image title" src="../images/Splunk%2011.png" width="600"></a>
+<br>
+<figcaption>Splunk configuration</figcaption>
 </figure>
 
 
