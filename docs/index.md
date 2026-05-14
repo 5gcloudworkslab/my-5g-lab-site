@@ -5,7 +5,7 @@ description: Full 5G Core and UERANSIM implementation guide with scripts, fixes,
 
 ## Lab 1 – Open5GS + UERANSIM Implementation (Full Documentation)
 
-~The pre‑configured AWS AMI for this lab is available for purchase. For details, see the About page.~
+~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~
 
 This section documents the complete workflow, scripts, commands, fixes, and troubleshooting steps performed during Lab 1. The goal was to deploy a full Open5GS 5G Core, launch UERANSIM gNodeB and UE, resolve registration and authentication issues, and validate user‑plane connectivity.
 

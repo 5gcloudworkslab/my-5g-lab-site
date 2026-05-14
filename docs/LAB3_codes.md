@@ -1,13 +1,16 @@
 # LAB 3 – Open5GS + UERANSIM + Splunk Integration
 
+~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~
+
 ## 1. Booting the Server (AMI V04)
+
 - Launch EC2 instance from **Open5GS AMI V04**
 - Set timezone:
+
 ```bash
 sudo timedatectl set-timezone Australia/Sydney
 timedatectl
 ```
-
 
 ## 2. Initial Health Checks
 
@@ -16,9 +19,9 @@ timedatectl
 - Log in to the Open5GS WebUI
 - Open required EC2 ports:
 
-| Port | Purpose |
-|------|---------|
-| 8000 | Open5GS WebUI |
+| Port | Purpose         |
+| ---- | --------------- |
+| 8000 | Open5GS WebUI   |
 | 9999 | UERANSIM gNodeB |
 
 ## 3. Preparing Log Files
@@ -45,6 +48,7 @@ tmux set -g mouse off
 ```
 bash ~/launch-open5gs.sh
 ```
+
 ## 5. Starting UERANSIM (UE + gNodeB)
 
 ```
@@ -110,9 +114,7 @@ apt-get install -f
 
 ## 13. Adding Open5GS Logs to Splunk
 
-
 AMF Log Input, File: /var/local/log/open5gs/amf.log, Monitor: Continuously, Source Type: generic_single_line, App Context: search, Host: EC2 hostname, Index: default
-
 
 ## 14. Splunk Input Successfully Created
 
@@ -120,20 +122,15 @@ Splunk is now indexing Open5GS + UERANSIM logs and ready for:
 
 Searching, Field extraction, Dashboard creation, KPI visualization
 
-
-
-
 <figure markdown="span">
   ![Image title](images/Splunk 1.png){ width="600" }
   <figcaption>Splunk configuration</figcaption>
 </figure>
 
-
 <figure markdown="span">
   ![Image title](images/Splunk 2.png){ width="600" }
   <figcaption>Splunk configuration</figcaption>
 </figure>
-
 
 <figure markdown="span">
   ![Image title](images/Splunk 3.png){ width="600" }
@@ -179,6 +176,3 @@ Searching, Field extraction, Dashboard creation, KPI visualization
   ![Image title](images/Splunk 11.png){ width="600" }
   <figcaption>Splunk configuration</figcaption>
 </figure>
-
-
-
