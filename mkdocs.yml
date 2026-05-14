@@ -13,6 +13,7 @@ theme:
   logo: logo.png
 
 nav:
+  - LAB_3 Codes: LAB3_codes.md
   - LAB_2 Codes: LAB2_codes.md
   - LAB_1 Codes: index.md
   - About: about.md
