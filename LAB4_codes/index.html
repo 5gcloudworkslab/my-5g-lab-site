@@ -679,7 +679,7 @@ global:
 scrape_configs:
   - job_name: 'open5gs_amf'
     static_configs:
-      - targets: ['127.0.0.5:9090'] 
+      - targets: ['127.0.0.5:9090']
 
   - job_name: 'open5gs_smf'
     static_configs:
@@ -709,7 +709,7 @@ User=prometheus
 ExecStart=/usr/local/bin/prometheus \
   --config.file=/etc/prometheus/prometheus.yml \
   --storage.tsdb.path=/var/lib/prometheus/ \
-  --web.listen-address=:9010 
+  --web.listen-address=:9010
 
 [Install]
 WantedBy=multi-user.target
@@ -734,7 +734,7 @@ Open this port in your EC2 Security Group:</p>
 <figure>
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom5.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom5.png" width="600"></a>
 <br>
-<figcaption>Prometheus configuration</figcaption>
+<figcaption>Opening port on EC2 of AWS</figcaption>
 </figure>
 <h2 id="5-verifying-prometheus">5. Verifying Prometheus</h2>
 <p>Check that Prometheus is running:</p>
