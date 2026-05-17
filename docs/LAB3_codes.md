@@ -23,7 +23,7 @@ timedatectl
 
 | Port | Purpose         |
 | ---- | --------------- |
-| 8000 | Splunk WebUI   |
+| 8000 | Splunk WebUI    |
 | 9999 | UERANSIM gNodeB |
 
 ## 3. Preparing Log Files
