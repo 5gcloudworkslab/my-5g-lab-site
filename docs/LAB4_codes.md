@@ -48,7 +48,7 @@ global:
 scrape_configs:
   - job_name: 'open5gs_amf'
     static_configs:
-      - targets: ['127.0.0.5:9090'] 
+      - targets: ['127.0.0.5:9090']
 
   - job_name: 'open5gs_smf'
     static_configs:
@@ -59,6 +59,7 @@ scrape_configs:
       - targets: ['127.0.0.7:9090']
 EOF
 ```
+
 Each Open5GS NF exposes metrics on port 9090, and the IP addresses correspond to the NF’s SBI/metrics interface.
 
 <figure markdown="span">
@@ -82,7 +83,7 @@ User=prometheus
 ExecStart=/usr/local/bin/prometheus \
   --config.file=/etc/prometheus/prometheus.yml \
   --storage.tsdb.path=/var/lib/prometheus/ \
-  --web.listen-address=:9010 
+  --web.listen-address=:9010
 
 [Install]
 WantedBy=multi-user.target
@@ -121,7 +122,7 @@ Source: Your IP or 0.0.0.0/0 (lab only)
 
 <figure markdown="span">
   ![Image title](images/prom5.png){ width="600" }
-  <figcaption>Prometheus configuration</figcaption>
+  <figcaption>Opening port on EC2 of AWS</figcaption>
 </figure>
 
 ## 5. Verifying Prometheus
