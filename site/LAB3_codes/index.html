@@ -462,10 +462,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-automated-attachdetach-cycling" class="md-nav__link">
+  <a href="#10-useful-monitoring-commands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Automated Attach/Detach Cycling
+        10. Useful Monitoring Commands
       
     </span>
   </a>
@@ -473,10 +473,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-useful-monitoring-commands" class="md-nav__link">
+  <a href="#11-installing-splunk-enterprise" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Useful Monitoring Commands
+        11. Installing Splunk Enterprise
       
     </span>
   </a>
@@ -484,10 +484,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-installing-splunk-enterprise" class="md-nav__link">
+  <a href="#12-adding-open5gs-logs-to-splunk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Installing Splunk Enterprise
+        12. Adding Open5GS Logs to Splunk
       
     </span>
   </a>
@@ -495,21 +495,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-adding-open5gs-logs-to-splunk" class="md-nav__link">
+  <a href="#13-splunk-input-successfully-created" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Adding Open5GS Logs to Splunk
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-splunk-input-successfully-created" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        14. Splunk Input Successfully Created
+        13. Splunk Input Successfully Created
       
     </span>
   </a>
@@ -742,10 +731,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-automated-attachdetach-cycling" class="md-nav__link">
+  <a href="#10-useful-monitoring-commands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Automated Attach/Detach Cycling
+        10. Useful Monitoring Commands
       
     </span>
   </a>
@@ -753,10 +742,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-useful-monitoring-commands" class="md-nav__link">
+  <a href="#11-installing-splunk-enterprise" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Useful Monitoring Commands
+        11. Installing Splunk Enterprise
       
     </span>
   </a>
@@ -764,10 +753,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-installing-splunk-enterprise" class="md-nav__link">
+  <a href="#12-adding-open5gs-logs-to-splunk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Installing Splunk Enterprise
+        12. Adding Open5GS Logs to Splunk
       
     </span>
   </a>
@@ -775,21 +764,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-adding-open5gs-logs-to-splunk" class="md-nav__link">
+  <a href="#13-splunk-input-successfully-created" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Adding Open5GS Logs to Splunk
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-splunk-input-successfully-created" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        14. Splunk Input Successfully Created
+        13. Splunk Input Successfully Created
       
     </span>
   </a>
@@ -815,6 +793,7 @@
 
 <h1 id="lab-3-open5gs-ueransim-splunk-integration">LAB 3 – Open5GS + UERANSIM + Splunk Integration</h1>
 <p>~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~</p>
+<p>Splunk plays a key role in network operations by providing a unified platform for collecting, indexing, and analyzing logs from distributed network functions. In 5G architectures, where components like AMF, SMF, UPF, PCF, and gNodeB generate large volumes of signaling and operational data, Splunk enables real‑time visibility into system behavior. Engineers can search events instantly, identify anomalies, build dashboards for KPIs, and accelerate troubleshooting. This transforms raw Open5GS and UERANSIM logs into actionable operational intelligence.</p>
 <h2 id="1-booting-the-server-ami-v04">1. Booting the Server (AMI V04)</h2>
 <ul>
 <li>Launch EC2 instance from <strong>Open5GS AMI V04</strong></li>
@@ -840,7 +819,7 @@ timedatectl
 <tbody>
 <tr>
 <td>8000</td>
-<td>Open5GS WebUI</td>
+<td>Splunk WebUI</td>
 </tr>
 <tr>
 <td>9999</td>
@@ -882,10 +861,7 @@ sudo ~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/open5gs-ue.yaml | tee ~/ueransi
 <pre><code>cd ~/UERANSIM/build
 ./nr-cli imsi-999700000000001 -e "deregister switch-off"
 </code></pre>
-<h2 id="10-automated-attachdetach-cycling">10. Automated Attach/Detach Cycling</h2>
-<pre><code>/home/ubuntu/ue-cycle.sh
-</code></pre>
-<h2 id="11-useful-monitoring-commands">11. Useful Monitoring Commands</h2>
+<h2 id="10-useful-monitoring-commands">10. Useful Monitoring Commands</h2>
 <pre><code>./nr-cli UERANSIM-gnb-999-70-1 -e "ue-list"
 ./nr-cli UERANSIM-gnb-999-70-1 -e "ue-count"
 ./nr-cli UERANSIM-gnb-999-70-1 -e "status"
@@ -893,7 +869,7 @@ sudo ~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/open5gs-ue.yaml | tee ~/ueransi
 ./nr-cli UERANSIM-gnb-999-70-1 -e "amf-info"
 ./nr-cli --dump
 </code></pre>
-<h2 id="12-installing-splunk-enterprise">12. Installing Splunk Enterprise</h2>
+<h2 id="11-installing-splunk-enterprise">11. Installing Splunk Enterprise</h2>
 <pre><code>sudo su
 cd /opt
 wget -O splunk-10.0.0.deb "https://download.splunk.com/products/splunk/releases/10.0.0/linux/splunk-10.0.0-e8eb0c4654f8-linux-amd64.deb"
@@ -902,9 +878,9 @@ apt-get install -f
 /opt/splunk/bin/splunk start --accept-license
 /opt/splunk/bin/splunk enable boot-start
 </code></pre>
-<h2 id="13-adding-open5gs-logs-to-splunk">13. Adding Open5GS Logs to Splunk</h2>
+<h2 id="12-adding-open5gs-logs-to-splunk">12. Adding Open5GS Logs to Splunk</h2>
 <p>AMF Log Input, File: /var/local/log/open5gs/amf.log, Monitor: Continuously, Source Type: generic_single_line, App Context: search, Host: EC2 hostname, Index: default</p>
-<h2 id="14-splunk-input-successfully-created">14. Splunk Input Successfully Created</h2>
+<h2 id="13-splunk-input-successfully-created">13. Splunk Input Successfully Created</h2>
 <p>Splunk is now indexing Open5GS + UERANSIM logs and ready for:</p>
 <p>Searching, Field extraction, Dashboard creation, KPI visualization</p>
 <figure>

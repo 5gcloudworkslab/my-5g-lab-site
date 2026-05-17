@@ -3,14 +3,25 @@
 <!-- ========================= -->
 
 <p>
-I am a core network engineer specialising in EPC, 5GC, and IMS, with strong hands‑on experience in troubleshooting, optimisation, and cloud‑native mobile‑core deployments. My work spans multi‑vendor packet‑core environments, signalling analysis, and building reproducible 5G lab infrastructures for research and engineering teams.
+I’m a researcher and practitioner passionate about mobile‑core networks, 5G architecture, and cloud‑native telecom systems. My background spans 15 years in the mobile‑telecommunications industry, working with a variety of vendors and operators on EPC, 5GC, IMS, and multi‑vendor packet‑core platforms. I enjoy deep‑dive analysis of signalling, performance optimisation, and building reproducible 5G testbeds for experimentation and learning. I hold Bachelor’s degrees in Telecommunications and master of Electronics.
 </p>
 
 <p>
 I also maintain cloud‑based 5G testbeds and support engineers, students, and researchers working with Open5GS and UERANSIM.
 </p>
 
----
+</p>
+The website currently includes the following hands‑on 5G lab topics:
+
+Lab 1: Open5GS + UERANSIM Implementation
+
+Lab 2: Distributed Open5GS + UERANSIM on AWS
+
+Lab 3: Open5GS + UERANSIM + Splunk Integration
+
+Lab 4: Open5GS + UERANSIM + Prometheus Integration
+
+## <p>
 
 <!-- ========================= -->
 <!-- AMI Access Section        -->

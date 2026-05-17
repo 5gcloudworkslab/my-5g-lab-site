@@ -1,4 +1,4 @@
-# **Lab 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)**
+# Lab 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)
 
 ~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~
 
