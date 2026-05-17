@@ -5,13 +5,11 @@
       
       
       
-        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB2_codes/">
+        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB4_codes/">
       
       
-        <link rel="prev" href="../LAB3_codes/">
       
-      
-        <link rel="next" href="..">
+        <link rel="next" href="../LAB3_codes/">
       
       
         
@@ -22,7 +20,7 @@
     
     
       
-        <title>LAB_2 Codes - 5GCloudWorks</title>
+        <title>LAB_4 Codes - 5GCloudWorks</title>
       
     
     
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture" class="md-skip">
+        <a href="#lab-4-open5gs-ueransim-prometheus-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LAB_2 Codes
+              LAB_4 Codes
             
           </span>
         </div>
@@ -175,9 +173,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../LAB4_codes/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -213,11 +213,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../LAB2_codes/" class="md-tabs__link">
         
   
   
@@ -310,10 +308,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../LAB4_codes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAB_4 Codes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -329,6 +354,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-installing-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Installing Prometheus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prometheus-configuration-for-open5gs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prometheus Configuration for Open5GS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-creating-the-prometheus-systemd-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Creating the Prometheus Systemd Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-opening-port-9010-on-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Opening Port 9010 on EC2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verifying-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Verifying Prometheus
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -364,37 +464,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LAB_2 Codes
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LAB2_codes/" class="md-nav__link">
         
   
   
@@ -410,110 +483,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Architecture Overview
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #2 – Open5GS Core
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Key Differences from Lab 1
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -599,86 +568,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
+  <a href="#1-installing-prometheus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture Overview
+        1. Installing Prometheus
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #2 – Open5GS Core
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+  <a href="#2-prometheus-configuration-for-open5gs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Key Differences from Lab 1
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
+        2. Prometheus Configuration for Open5GS
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#3-creating-the-prometheus-systemd-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Creating the Prometheus Systemd Service
+      
+    </span>
+  </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#4-opening-port-9010-on-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Opening Port 9010 on EC2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verifying-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Verifying Prometheus
+      
+    </span>
+  </a>
   
 </li>
       
@@ -699,55 +639,130 @@
 
 
 
-<h1 id="lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture">Lab 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)</h1>
+<h1 id="lab-4-open5gs-ueransim-prometheus-integration">LAB 4 – Open5GS + UERANSIM + Prometheus Integration</h1>
 <p>~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~</p>
-<p>This lab extends the work from Lab 1, but introduces a major architectural change:<br>
-instead of running both Open5GS and UERANSIM on a single EC2 instance, the system is now distributed across two EC2 instances, each in a separate Availability Zone.</p>
-<p>The goal of Lab 2 was to validate that Open5GS and UERANSIM can operate across AWS infrastructure boundaries, with correct routing, SCTP/GTP‑U reachability, and proper N2/N3 interface binding.</p>
+<p>This section covers how to install Prometheus on your EC2 instance and configure it to scrape metrics from the Open5GS AMF, SMF, and UPF network functions. Prometheus provides time‑series monitoring and is commonly used in 4G/5G labs to visualize NF performance, track KPIs, and integrate with Grafana dashboards.</p>
+<h2 id="1-installing-prometheus">1. Installing Prometheus</h2>
+<p>The following script installs Prometheus, creates the required system user, and prepares the directory structure.
+Run the script on your EC2 instance:</p>
+<pre><code class="language-bash">cat &lt;&lt;'EOF' | sudo tee /tmp/install_prometheus.sh
+#!/bin/bash
+set -e
+
+# Create user and directories
+sudo useradd --no-create-home --shell /bin/false prometheus
+sudo mkdir -p /etc/prometheus /var/lib/prometheus
+
+# Download Prometheus
+cd /tmp
+curl -LO https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-amd64.tar.gz
+tar xvf prometheus-2.48.0.linux-amd64.tar.gz
+cd prometheus-2.48.0.linux-amd64
+
+# Move binaries
+sudo cp prometheus promtool /usr/local/bin/
+sudo cp -r consoles console_libraries /etc/prometheus/
+
+# Set ownership
+sudo chown -R prometheus:prometheus /etc/prometheus /var/lib/prometheus
+EOF
+
+bash /tmp/install_prometheus.sh
+</code></pre>
+<h2 id="2-prometheus-configuration-for-open5gs">2. Prometheus Configuration for Open5GS</h2>
+<p>Prometheus scrapes metrics from Open5GS network functions using their built‑in metrics endpoints.
+Create the Prometheus configuration file:</p>
+<pre><code class="language-bash">cat &lt;&lt;'EOF' | sudo tee /etc/prometheus/prometheus.yml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'open5gs_amf'
+    static_configs:
+      - targets: ['127.0.0.5:9090'] 
+
+  - job_name: 'open5gs_smf'
+    static_configs:
+      - targets: ['127.0.0.4:9090']
+
+  - job_name: 'open5gs_upf'
+    static_configs:
+      - targets: ['127.0.0.7:9090']
+EOF
+</code></pre>
+<p>Each Open5GS NF exposes metrics on port 9090, and the IP addresses correspond to the NF’s SBI/metrics interface.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20structure.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20structure.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom0.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom0.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Distributed AWS Architecture</figcaption>
+<figcaption>Prometheus configuration</figcaption>
 </figure>
-<hr>
-<h2 id="1-architecture-overview"><strong>1. Architecture Overview</strong></h2>
-<p>Lab 2 uses two EC2 instances inside the same VPC:</p>
-<h3 id="ec2-1-ueransim"><strong>EC2 #1 – UERANSIM</strong></h3>
-<ul>
-<li>Runs gNodeB</li>
-<li>Runs UE</li>
-<li>Handles RRC, NGAP, and GTP‑U uplink/downlink</li>
-<li>Must reach AMF (N2) and UPF (N3) over private IPs</li>
-</ul>
-<h3 id="ec2-2-open5gs-core"><strong>EC2 #2 – Open5GS Core</strong></h3>
-<ul>
-<li>Runs AMF, SMF, UPF, NRF, SCP, UDM, UDR, AUSF</li>
-<li>UPF exposes GTP‑U (UDP/2152)</li>
-<li>AMF exposes NGAP (SCTP/38412)</li>
-</ul>
-<p>Both instances remain inside the same VPC, so routing is automatic.<br>
-However, AWS does not allow SCTP or GTP‑U by default, so Security Groups must be configured manually.</p>
+<h2 id="3-creating-the-prometheus-systemd-service">3. Creating the Prometheus Systemd Service</h2>
+<p>To run Prometheus as a background service and enable auto‑start on boot, create the systemd unit:</p>
+<pre><code class="language-bash">cat &lt;&lt;'EOF' | sudo tee /etc/systemd/system/prometheus.service
+[Unit]
+Description=Prometheus Monitoring
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+ExecStart=/usr/local/bin/prometheus \
+  --config.file=/etc/prometheus/prometheus.yml \
+  --storage.tsdb.path=/var/lib/prometheus/ \
+  --web.listen-address=:9010 
+
+[Install]
+WantedBy=multi-user.target
+EOF
+</code></pre>
+<p>Reload systemd and start the service:</p>
+<pre><code class="language-bash">sudo systemctl daemon-reexec
+sudo systemctl enable --now prometheus
+</code></pre>
+<p>Check service status:</p>
+<pre><code class="language-bash">sudo systemctl status prometheus
+</code></pre>
+<h2 id="4-opening-port-9010-on-ec2">4. Opening Port 9010 on EC2</h2>
+<p>Prometheus listens on port 9010.
+Open this port in your EC2 Security Group:</p>
+<p>Go to EC2 → Security Groups</p>
+<p>Edit inbound rules</p>
+<p>Add rule:</p>
+<p>Type: Custom TCP</p>
+<p>Port: 9010</p>
+<p>Source: Your IP or 0.0.0.0/0 (lab only)</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20SG%20for%202%20EC2.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20SG%20for%202%20EC2.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom5.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom5.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – SG configuration</figcaption>
+<figcaption>Prometheus configuration</figcaption>
 </figure>
-<hr>
-<h2 id="2-key-differences-from-lab-1"><strong>2. Key Differences from Lab 1</strong></h2>
-<p>Lab 1 used a single EC2 instance, so all interfaces were loopback‑local or internal to the same machine.</p>
-<p>Lab 2 introduces the following changes.</p>
-<h3 id="a-distributed-n2-and-n3-interfaces"><strong>(A) Distributed N2 and N3 interfaces</strong></h3>
-<p>You must update the following in UERANSIM configs to use EC2 private IPs.</p>
-<h4 id="n2-ngap-over-sctp"><strong>N2 (NGAP over SCTP)</strong></h4>
+<h2 id="5-verifying-prometheus">5. Verifying Prometheus</h2>
+<p>Check that Prometheus is running:</p>
+<pre><code class="language-bash">ps aux | grep prometheus
+</code></pre>
+<p>Prometheus UI should now be accessible at:</p>
+<pre><code class="language-bash">http://&lt;EC2-Public-IP&gt;:9010/
+</code></pre>
+<p>If the page loads, Prometheus is successfully installed and scraping Open5GS metrics.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/open5gs%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/open5gs%20private%20IP.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom1.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom1.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Private IP address of AZ for Open5GS</figcaption>
+<figcaption>Prometheus dashboard</figcaption>
 </figure>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/UERANSIM%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/UERANSIM%20private%20IP.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom2.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom2.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Private IP address of AZ for UERANSIM</figcaption>
+<figcaption>Prometheus dashboard</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom3.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom3.png" width="600"></a>
+<br>
+<figcaption>Prometheus dashboard</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/prom4.png" data-desc-position="bottom"><img alt="Image title" src="../images/prom4.png" width="600"></a>
+<br>
+<figcaption>Open5Gs+UERANSIN in one shot</figcaption>
 </figure>
 
 
