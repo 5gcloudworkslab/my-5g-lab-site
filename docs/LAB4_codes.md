@@ -64,7 +64,7 @@ Each Open5GS NF exposes metrics on port 9090, and the IP addresses correspond to
 
 <figure markdown="span">
   ![Image title](images/prom0.png){ width="600" }
-  <figcaption>Prometheus configuration</figcaption>
+  <figcaption>amf.yaml configuration</figcaption>
 </figure>
 
 ## 3. Creating the Prometheus Systemd Service
@@ -158,5 +158,5 @@ If the page loads, Prometheus is successfully installed and scraping Open5GS met
 
 <figure markdown="span">
   ![Image title](images/prom4.png){ width="600" }
-  <figcaption>Open5Gs+UERANSIN in one shot</figcaption>
+  <figcaption>Open5Gs+UERANSIM in one shot</figcaption>
 </figure>
