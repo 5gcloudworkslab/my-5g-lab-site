@@ -2,6 +2,8 @@
 
 ~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~
 
+Splunk plays a key role in network operations by providing a unified platform for collecting, indexing, and analyzing logs from distributed network functions. In 5G architectures, where components like AMF, SMF, UPF, PCF, and gNodeB generate large volumes of signaling and operational data, Splunk enables real‑time visibility into system behavior. Engineers can search events instantly, identify anomalies, build dashboards for KPIs, and accelerate troubleshooting. This transforms raw Open5GS and UERANSIM logs into actionable operational intelligence.
+
 ## 1. Booting the Server (AMI V04)
 
 - Launch EC2 instance from **Open5GS AMI V04**
@@ -21,7 +23,7 @@ timedatectl
 
 | Port | Purpose         |
 | ---- | --------------- |
-| 8000 | Open5GS WebUI   |
+| 8000 | Splunk WebUI   |
 | 9999 | UERANSIM gNodeB |
 
 ## 3. Preparing Log Files
@@ -83,13 +85,7 @@ cd ~/UERANSIM/build
 ./nr-cli imsi-999700000000001 -e "deregister switch-off"
 ```
 
-## 10. Automated Attach/Detach Cycling
-
-```
-/home/ubuntu/ue-cycle.sh
-```
-
-## 11. Useful Monitoring Commands
+## 10. Useful Monitoring Commands
 
 ```
 ./nr-cli UERANSIM-gnb-999-70-1 -e "ue-list"
@@ -100,7 +96,7 @@ cd ~/UERANSIM/build
 ./nr-cli --dump
 ```
 
-## 12. Installing Splunk Enterprise
+## 11. Installing Splunk Enterprise
 
 ```
 sudo su
@@ -112,11 +108,11 @@ apt-get install -f
 /opt/splunk/bin/splunk enable boot-start
 ```
 
-## 13. Adding Open5GS Logs to Splunk
+## 12. Adding Open5GS Logs to Splunk
 
 AMF Log Input, File: /var/local/log/open5gs/amf.log, Monitor: Continuously, Source Type: generic_single_line, App Context: search, Host: EC2 hostname, Index: default
 
-## 14. Splunk Input Successfully Created
+## 13. Splunk Input Successfully Created
 
 Splunk is now indexing Open5GS + UERANSIM logs and ready for:
 
