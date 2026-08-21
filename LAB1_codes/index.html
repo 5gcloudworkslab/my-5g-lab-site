@@ -7,13 +7,13 @@
       
       
       
-        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB2_codes/">
+        <link rel="canonical" href="https://5gcloudworkslab.github.io/my-5g-lab-site/LAB1_codes/">
       
       
-        <link rel="prev" href="../LAB3_codes/">
+        <link rel="prev" href="../LAB2_codes/">
       
       
-        <link rel="next" href="../LAB1_codes/">
+        <link rel="next" href="../about/">
       
       
         
@@ -24,7 +24,7 @@
     
     
       
-        <title>LAB_2 Codes - 5GCloudWorks</title>
+        <title>LAB_1 Codes - 5GCloudWorks</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture" class="md-skip">
+        <a href="#lab-1-open5gs-ueransim-implementation-full-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LAB_2 Codes
+              LAB_1 Codes
             
           </span>
         </div>
@@ -234,11 +234,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../LAB2_codes/" class="md-tabs__link">
         
   
   
@@ -255,9 +253,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../LAB1_codes/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -431,6 +431,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB2_codes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAB_2 Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -440,8 +467,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -450,7 +475,7 @@
   <span class="md-ellipsis">
     
   
-    LAB_2 Codes
+    LAB_1 Codes
   
 
     
@@ -468,7 +493,7 @@
   <span class="md-ellipsis">
     
   
-    LAB_2 Codes
+    LAB_1 Codes
   
 
     
@@ -484,8 +509,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -494,33 +517,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
+  <a href="#lab-1-open5gs-ueransim-implementation-full-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture Overview
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
+        Lab 1 – Open5GS + UERANSIM Implementation (Full Documentation)
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#0-handy-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        EC2 #2 – Open5GS Core
+        0. Handy scripts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-launching-the-open5gs-core-8-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Launching the Open5GS Core (8 NFs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Launching the Open5GS Core (8 NFs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-launcher-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core launcher script
       
     </span>
   </a>
@@ -533,34 +567,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+  <a href="#2-fixing-upf-capabilities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Key Differences from Lab 1
+        2. Fixing UPF Capabilities
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
+    <nav class="md-nav" aria-label="2. Fixing UPF Capabilities">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
+  <a href="#upf-launcher-script" class="md-nav__link">
     <span class="md-ellipsis">
       
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
+        UPF launcher script
       
     </span>
   </a>
@@ -571,9 +593,59 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#3-launching-pcf-nssf-and-bsf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Launching PCF, NSSF, and BSF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-launch-ueransim-gnodeb-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Launch UERANSIM (gNodeB + UE)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-gnodeb-configuration-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. gNodeB Configuration Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ue-configuration-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. UE Configuration Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-monitor-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Monitor Logs
+      
+    </span>
+  </a>
   
 </li>
       
@@ -581,33 +653,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LAB1_codes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LAB_1 Codes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -683,8 +728,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -693,33 +736,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-architecture-overview" class="md-nav__link">
+  <a href="#lab-1-open5gs-ueransim-implementation-full-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture Overview
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ec2-1-ueransim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EC2 #1 – UERANSIM
+        Lab 1 – Open5GS + UERANSIM Implementation (Full Documentation)
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ec2-2-open5gs-core" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#0-handy-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        EC2 #2 – Open5GS Core
+        0. Handy scripts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-launching-the-open5gs-core-8-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Launching the Open5GS Core (8 NFs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Launching the Open5GS Core (8 NFs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-launcher-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core launcher script
       
     </span>
   </a>
@@ -732,34 +786,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-differences-from-lab-1" class="md-nav__link">
+  <a href="#2-fixing-upf-capabilities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Key Differences from Lab 1
+        2. Fixing UPF Capabilities
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Key Differences from Lab 1">
+    <nav class="md-nav" aria-label="2. Fixing UPF Capabilities">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-distributed-n2-and-n3-interfaces" class="md-nav__link">
+  <a href="#upf-launcher-script" class="md-nav__link">
     <span class="md-ellipsis">
       
-        (A) Distributed N2 and N3 interfaces
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="(A) Distributed N2 and N3 interfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#n2-ngap-over-sctp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        N2 (NGAP over SCTP)
+        UPF launcher script
       
     </span>
   </a>
@@ -770,9 +812,59 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#3-launching-pcf-nssf-and-bsf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Launching PCF, NSSF, and BSF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-launch-ueransim-gnodeb-ue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Launch UERANSIM (gNodeB + UE)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-gnodeb-configuration-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. gNodeB Configuration Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ue-configuration-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. UE Configuration Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-monitor-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Monitor Logs
+      
+    </span>
+  </a>
   
 </li>
       
@@ -793,56 +885,307 @@
 
 
 
-<h1 id="lab-2-distributed-open5gs-ueransim-on-aws-twoec2-architecture">LAB 2 – Distributed Open5GS + UERANSIM on AWS (Two‑EC2 Architecture)</h1>
+  <h1>LAB_1 Codes</h1>
+
+<h2 id="lab-1-open5gs-ueransim-implementation-full-documentation">Lab 1 – Open5GS + UERANSIM Implementation (Full Documentation)</h2>
 <p>~The pre‑configured AWS AMI for this lab is available to share. For details, see the About page.~</p>
-<p>This lab extends the work from Lab 1, but introduces a major architectural change:<br>
-instead of running both Open5GS and UERANSIM on a single EC2 instance, the system is now distributed across two EC2 instances, each in a separate Availability Zone.</p>
-<p>The goal of Lab 2 was to validate that Open5GS and UERANSIM can operate across AWS infrastructure boundaries, with correct routing, SCTP/GTP‑U reachability, and proper N2/N3 interface binding.</p>
+<p>This section documents the complete workflow, scripts, commands, fixes, and troubleshooting steps performed during Lab 1. The goal was to deploy a full Open5GS 5G Core, launch UERANSIM gNodeB and UE, resolve registration and authentication issues, and validate user‑plane connectivity.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20structure.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20structure.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Ip%20design4.png" data-desc-position="bottom"><img alt="Image title" src="../images/Ip%20design4.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Distributed AWS Architecture</figcaption>
+<figcaption>AWS Application Structure</figcaption>
+</figure>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Ip%20design5.png" data-desc-position="bottom"><img alt="Image title" src="../images/Ip%20design5.png" width="600"></a>
+<br>
+<figcaption>5G Architecture</figcaption>
 </figure>
 <hr>
-<h2 id="1-architecture-overview"><strong>1. Architecture Overview</strong></h2>
-<p>Lab 2 uses two EC2 instances inside the same VPC:</p>
-<h3 id="ec2-1-ueransim"><strong>EC2 #1 – UERANSIM</strong></h3>
+<h2 id="0-handy-scripts">0. Handy scripts</h2>
+<p>-----&gt; Install tshark (headless Wireshark)</p>
+<pre><code class="language-bash">sudo DEBIAN_FRONTEND=noninteractive apt update
+sudo DEBIAN_FRONTEND=noninteractive apt install -y tshark
+</code></pre>
+<p>This installs the Wireshark engine without GUI.</p>
+<p>-----&gt; Export PCAPs for Wireshark**
+List:</p>
+<pre><code class="language-bash">ls -lh /tmp/*.pcap
+</code></pre>
+<p>Copy:</p>
+<pre><code class="language-bash">sudo cp /tmp/gnodeb_gtpu.pcap /home/ubuntu/
+sudo cp /tmp/ue_traffic.pcap /home/ubuntu/
+sudo cp /tmp/open5gs_full_capture.pcap /home/ubuntu/
+</code></pre>
+<p>Fix permissions:</p>
+<pre><code class="language-bash">sudo chown ubuntu:ubuntu /home/ubuntu/*.pcap
+sudo chmod 644 /home/ubuntu/*.pcap
+</code></pre>
+<p>Download via SCP:</p>
+<pre><code class="language-bash">scp -i "your-key.pem" ubuntu@&lt;EC2-IP&gt;:/home/ubuntu/open5gs_full_capture
+</code></pre>
+<p>-----&gt; Clean Open5GS logs**</p>
+<pre><code class="language-bash">cd /var/local/log/open5gs
+sudo truncate -s 0 *.log
+</code></pre>
+<p>-----&gt; Capture ALL Open5GS traffic
+This is useful for debugging SBI, PFCP, NGAP, GTP-U, everything.</p>
+<pre><code class="language-bash">sudo tshark -i any -w /tmp/open5gs_full_capture.pcap
+</code></pre>
+<p>Or in tmux:</p>
+<pre><code class="language-bash">tmux new -s open5gs_full_capture 'sudo tshark -i any -w /tmp/open5gs_full_capture.pcap'
+</code></pre>
+<p>-----&gt; To change the time Zone</p>
+<pre><code class="language-bash">sudo timedatectl set-timezone Australia/Sydney
+timedatectl
+new -s open5gs_full_capture 'sudo tshark -i any -w /tmp/open5gs_full_capture.pcap'
+</code></pre>
+<p>----&gt; How to check the health of DB?</p>
+<pre><code>cat &lt;&lt; 'EOF' &gt; check_mongodb_health.sh
+#!/bin/bash
+echo "?? Checking MongoDB service status..."
+systemctl is-active mongod &amp;&amp; echo "? mongod.service is active" || echo "? mongod.service is not active"
+
+echo "?? Checking MongoDB port (27017)..."
+ss -tuln | grep ':27017' &amp;&amp; echo "? Port 27017 is listening" || echo "? Port 27017 is not listening"
+
+echo "?? Running MongoDB ping via mongosh..."
+mongosh "mongodb://127.0.0.1:27017" --quiet --eval 'db.runCommand({ ping: 1 })' | grep 'ok: 1' \
+  &amp;&amp; echo "? MongoDB responded to ping" || echo "? MongoDB ping failed"
+EOF
+
+chmod +x check_mongodb_health.sh
+./check_mongodb_health.sh
+</code></pre>
+<p>-----&gt; webui health check:</p>
+<pre><code>cat &lt;&lt; 'EOF' &gt; check_webui_health.sh
+#!/bin/bash
+WEBUI_PORT=9999
+WEBUI_HOST=127.0.0.1
+
+echo "?? Checking WebUI port ($WEBUI_PORT)..."
+ss -tuln | grep ":$WEBUI_PORT" &amp;&amp; echo "? WebUI port is listening" || echo "? WebUI port is not listening"
+
+echo "?? Sending HTTP request to WebUI..."
+STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://$WEBUI_HOST:$WEBUI_PORT)
+
+if [ "$STATUS_CODE" == "200" ]; then
+  echo "? WebUI responded with HTTP 200"
+else
+  echo "? WebUI response code: $STATUS_CODE"
+fi
+EOF
+
+chmod +x check_webui_health.sh
+./check_webui_health.sh
+</code></pre>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Open5gs%20web%20portal.png" data-desc-position="bottom"><img alt="Image title" src="../images/Open5gs%20web%20portal.png" width="600"></a>
+<br>
+<figcaption>Open5Gs Portal</figcaption>
+</figure>
+<h2 id="1-launching-the-open5gs-core-8-nfs">1. Launching the Open5GS Core (8 NFs)</h2>
+<p>A tmux‑based launcher script was created to start all core NFs:</p>
 <ul>
-<li>Runs gNodeB</li>
-<li>Runs UE</li>
-<li>Handles RRC, NGAP, and GTP‑U uplink/downlink</li>
-<li>Must reach AMF (N2) and UPF (N3) over private IPs</li>
+<li>NRF</li>
+<li>SCP</li>
+<li>UDR</li>
+<li>UDM</li>
+<li>AUSF</li>
+<li>AMF</li>
+<li>SMF</li>
+<li>UPF</li>
 </ul>
-<h3 id="ec2-2-open5gs-core"><strong>EC2 #2 – Open5GS Core</strong></h3>
-<ul>
-<li>Runs AMF, SMF, UPF, NRF, SCP, UDM, UDR, AUSF</li>
-<li>UPF exposes GTP‑U (UDP/2152)</li>
-<li>AMF exposes NGAP (SCTP/38412)</li>
-</ul>
-<p>Both instances remain inside the same VPC, so routing is automatic.<br>
-However, AWS does not allow SCTP or GTP‑U by default, so Security Groups must be configured manually.</p>
+<h3 id="core-launcher-script">Core launcher script</h3>
+<pre><code class="language-bash">cat &lt;&lt;'EOF' &gt; ~/open5gs-lab.sh
+#!/bin/bash
+SESSION="open5gs"
+LOG_DIR="$HOME/open5gs-logs"
+mkdir -p "$LOG_DIR"
+
+tmux kill-session -t "$SESSION" 2&gt;/dev/null
+
+nf_list=(
+  "NRF" "SCP" "UDR" "UDM" "AUSF" "AMF" "SMF" "UPF"
+)
+
+declare -A nf_cmds=(
+  ["NRF"]="/usr/local/bin/open5gs-nrfd"
+  ["SCP"]="/usr/local/bin/open5gs-scpd"
+  ["UDR"]="/usr/local/bin/open5gs-udrd"
+  ["UDM"]="/usr/local/bin/open5gs-udmd"
+  ["AUSF"]="/usr/local/bin/open5gs-ausfd"
+  ["AMF"]="/usr/local/bin/open5gs-amfd"
+  ["SMF"]="/usr/local/bin/open5gs-smfd"
+  ["UPF"]="/usr/local/bin/open5gs-upfd"
+)
+
+first=true
+split="-v"
+for nf in "${nf_list[@]}"; do
+  CMD="echo Starting $nf &amp;&amp; (${nf_cmds[$nf]} | tee $LOG_DIR/$nf.log || echo '$nf failed')"
+
+  if $first; then
+    tmux new-session -d -s "$SESSION" -n core "$CMD"
+    tmux select-pane -T "$nf"
+    first=false
+  else
+    tmux split-window $split -t "$SESSION"
+    tmux select-pane -T "$nf"
+    tmux send-keys -t "$SESSION" "$CMD" C-m
+    tmux select-layout -t "$SESSION" tiled
+    [ "$split" = "-v" ] &amp;&amp; split="-h" || split="-v"
+  fi
+
+  sleep 5
+done
+
+tmux select-layout -t "$SESSION" tiled
+tmux attach-session -t "$SESSION"
+EOF
+
+chmod +x ~/open5gs-lab.sh
+~/open5gs-lab.sh
+</code></pre>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AWS%20SG%20for%202%20EC2.png" data-desc-position="bottom"><img alt="Image title" src="../images/AWS%20SG%20for%202%20EC2.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/tmux%205gcore%20nodes.png" data-desc-position="bottom"><img alt="Image title" src="../images/tmux%205gcore%20nodes.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – SG configuration</figcaption>
+<figcaption>Live 5G Core troubleshooting environment with parallel NF logs for deep‑dive analysis</figcaption>
 </figure>
-<hr>
-<h2 id="2-key-differences-from-lab-1"><strong>2. Key Differences from Lab 1</strong></h2>
-<p>Lab 1 used a single EC2 instance, so all interfaces were loopback‑local or internal to the same machine.</p>
-<p>Lab 2 introduces the following changes.</p>
-<h3 id="a-distributed-n2-and-n3-interfaces"><strong>(A) Distributed N2 and N3 interfaces</strong></h3>
-<p>You must update the following in UERANSIM configs to use EC2 private IPs.</p>
-<h4 id="n2-ngap-over-sctp"><strong>N2 (NGAP over SCTP)</strong></h4>
+<h2 id="2-fixing-upf-capabilities">2. Fixing UPF Capabilities</h2>
+<p>UPF initially failed due to missing capabilities.</p>
+<p>Fix:
+sudo setcap cap_net_admin=eip /usr/local/bin/open5gs-upfd</p>
+<h3 id="upf-launcher-script">UPF launcher script</h3>
+<pre><code>cat &lt;&lt;'EOF' &gt; ~/launch-upf.sh
+#!/bin/bash
+
+echo "Launching UPF..."
+mkdir -p ~/open5gs-logs
+
+/usr/local/bin/open5gs-upfd -c /etc/open5gs/upf.yaml | tee ~/open5gs-logs/UPF.log &amp;
+
+sleep 3
+
+if ip addr show ogstun &gt; /dev/null 2&gt;&amp;1; then
+echo "UPF launched successfully. ogstun interface is up."
+else
+echo "UPF may have failed. ogstun interface not found."
+echo "Check logs at ~/open5gs-logs/UPF.log"
+fi
+EOF
+
+chmod +x ~/launch-upf.sh
+~/launch-upf.sh
+</code></pre>
+<p>To show latest logs:</p>
+<p>tail -f /var/local/log/open5gs/upf.log</p>
+<h2 id="3-launching-pcf-nssf-and-bsf">3. Launching PCF, NSSF, and BSF</h2>
+<pre><code>nano ~/launch-open5gs.sh
+
+cat &lt;&lt;'EOF' &gt; ~/launch-open5gs.sh
+#!/bin/bash
+
+LOGDIR=~/open5gs-logs
+mkdir -p "$LOGDIR"
+
+echo "Launching Open5GS NFs..."
+
+echo "PCF..."
+/usr/local/bin/open5gs-pcfd -c /etc/open5gs/pcf.yaml | tee "$LOGDIR/PCF.log" &amp;
+sleep 2
+
+echo "NSSF..."
+/usr/local/bin/open5gs-nssfd -c /etc/open5gs/nssf.yaml | tee "$LOGDIR/NSSF.log" &amp;
+sleep 2
+
+echo "BSF..."
+/usr/local/bin/open5gs-bsfd -c /etc/open5gs/bsf.yaml | tee "$LOGDIR/BSF.log" &amp;
+sleep 2
+
+echo "All NFs launched. Logs are in $LOGDIR"
+EOF
+
+chmod +x ~/launch-open5gs.sh
+
+bash ~/launch-open5gs.sh
+
+sudo mkdir -p /var/local/log/open5gs
+sudo touch /var/local/log/open5gs/pcf.log
+sudo chown -R $(whoami) /var/local/log/open5gs
+
+/usr/local/bin/open5gs-pcfd -c /etc/open5gs/pcf.yaml | tee ~/open5gs-logs/PCF.log
+</code></pre>
+<h2 id="4-launch-ueransim-gnodeb-ue">4. Launch UERANSIM (gNodeB + UE)</h2>
+<pre><code>nano ~/tmux-ueransim.sh
+
+cat &lt;&lt;'EOF' &gt; ~/tmux-ueransim.sh
+#!/bin/bash
+
+SESSION="ueransim"
+LOGDIR=~/ueransim-logs
+mkdir -p "$LOGDIR"
+
+tmux new-session -d -s $SESSION -n run-ueransim
+
+tmux send-keys -t $SESSION:0.0 'echo "Starting gNodeB..."; ~/UERANSIM/build/nr-gnb -c ~/UERANSIM/config/custom-gnb.yaml | tee ~/ueransim-logs/gNB.log' C-m
+
+tmux split-window -h -t $SESSION:0
+tmux send-keys -t $SESSION:0.1 'sleep 5; echo "Starting UE..."; ~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/custom-ue.yaml | tee ~/ueransim-logs/UE.log' C-m
+
+tmux select-pane -t $SESSION:0.0 -T "gNodeB"
+tmux select-pane -t $SESSION:0.1 -T "UE"
+
+tmux attach-session -t $SESSION
+EOF
+
+chmod +x ~/tmux-ueransim.sh
+
+bash ~/tmux-ueransim.sh
+</code></pre>
+<h2 id="5-gnodeb-configuration-fixes">5. gNodeB Configuration Fixes</h2>
+<pre><code>nano ~/UERANSIM/config/custom-gnb.yaml
+
+Changing the gNB PLMN to 99970
+mcc: 999
+mnc: 70
+
+comment out the sd parameter
+# sd: 0
+
+Restart gNodeB
+~/UERANSIM/build/nr-gnb -c ~/UERANSIM/config/custom-gnb.yaml | tee ~/ueransim-logs/gNB.log
+</code></pre>
+<h2 id="6-ue-configuration-fixes">6. UE Configuration Fixes</h2>
+<pre><code>nano ~/UERANSIM/config/custom-ue.yaml
+
+Update IMSI
+Match the subscriber entry in Open5GS WebUI.
+
+Fix authentication
+opType: 'OPC'
+
+Fix registration reject cause 62
+# sd: 1
+
+Restart UE
+~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/custom-ue.yaml
+
+Fix TUN creation failure
+sudo ~/UERANSIM/build/nr-ue -c ~/UERANSIM/config/custom-ue.yaml
+</code></pre>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/open5gs%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/open5gs%20private%20IP.png" width="600"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/5G%20attach%20and%20PDU%20establishment.png" data-desc-position="bottom"><img alt="Image title" src="../images/5G%20attach%20and%20PDU%20establishment.png" width="600"></a>
 <br>
-<figcaption>Lab 2 – Private IP address of AZ for Open5GS</figcaption>
+<figcaption>5G attach and PDU establishment</figcaption>
 </figure>
-<figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/UERANSIM%20private%20IP.png" data-desc-position="bottom"><img alt="Image title" src="../images/UERANSIM%20private%20IP.png" width="600"></a>
-<br>
-<figcaption>Lab 2 – Private IP address of AZ for UERANSIM</figcaption>
-</figure>
+<h2 id="7-monitor-logs">7. Monitor Logs</h2>
+<pre><code>sudo tail -F /var/local/log/open5gs/amf.log
+sudo tail -F /var/local/log/open5gs/smf.log
+sudo tail -F /var/local/log/open5gs/udm.log
+sudo tail -F /var/local/log/open5gs/udr.log
+sudo tail -F /var/local/log/open5gs/upf.log
+tail -F ~/ueransim-logs/gNB.log
+</code></pre>
 
 
 
