@@ -712,17 +712,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#contact-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📩 Contact Me
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -851,17 +840,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#contact-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📩 Contact Me
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -953,13 +931,52 @@ This website showcases practical 5G labs built using Open5GS, UERANSIM, AWS, Gra
 <li>Clear, practical documentation</li>
 </ul>
 <hr>
-<h2 id="contact-me">📩 Contact Me</h2>
-<p>If you want to hire me for consulting, training, or lab deployment, reach out:</p>
-<p><strong>Email:</strong> </p><p style="font-size: 1.1rem; font-weight: bold;">
-📧 fivegcloudworks@gmail.com
-</p>
-<strong>Location:</strong> Sydney, Australia<p></p>
-<hr>
+<div class="md-typeset">
+  <h2>📩 Contact Me</h2>
+  <p>If you want to hire me for consulting, training, or lab deployment, reach out using the form below.</p>
+
+  <form action="https://formspree.io/f/mnpayalz" method="POST" class="contact-form">
+
+    <label for="name">Your Name</label>
+    <input id="name" name="name" type="text" required="">
+
+    <label for="email">Your Email</label>
+    <input id="email" name="email" type="email" required="">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required=""></textarea>
+
+    <button type="submit" class="md-button md-button--primary">
+      Send Message
+    </button>
+
+  </form>
+</div>
+
+<style>
+  .contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #3f51b5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2);
+  }
+</style>
 
 
 
